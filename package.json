@@ -18,5 +18,8 @@
   "homepage": "https://github.com/anishshanbhag/SignallingServer#readme",
   "dependencies": {
     "websocket": "^1.0.26"
+  },
+  "devDependencies": {
+    "@angular/cli": "^6.0.0-rc.4"
   }
 }
