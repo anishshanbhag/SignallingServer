@@ -1,0 +1,22 @@
+{
+  "name": "6306_06_code",
+  "version": "1.0.0",
+  "description": "video_call_with_chat_and_file_sharing.html This is a basic web page that connects a Caller and a Callee via a Web Socket signaling server to support a video call and text based chat with file sharing.  This utilises the new_file_arriving.png and share_new_file.png files in the images directory. This also includes: - webrtc_polyfill.js This is a simple WebRTC polyfill designed to make it easy to write WebRTC code that runs on different browser implementations (e.g. Chrome, Firefox, etc.).",
+  "main": "webrtc_signal_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anishshanbhag/SignallingServer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anishshanbhag/SignallingServer/issues"
+  },
+  "homepage": "https://github.com/anishshanbhag/SignallingServer#readme",
+  "dependencies": {
+    "websocket": "^1.0.26"
+  }
+}
