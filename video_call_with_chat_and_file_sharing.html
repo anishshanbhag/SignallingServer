@@ -79,7 +79,7 @@ function start() {
   setup_video();
 
   // setup generic connection to the signaling server using the WebSocket API
-  signaling_server = new WebSocket("ws://videowalls.herokuapp.com/");
+  signaling_server = new WebSocket("ws://localhost:3000");
 
   if (document.location.hash === "" || document.location.hash === undefined) { // you are the Caller
 
