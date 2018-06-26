@@ -27,7 +27,7 @@ if (navigator.getUserMedia) {
     media_element.play();
   };
   stun_server = "74.125.31.127:19302";
-} else if (navigator.webkitGetUserMedia) { 
+} else if (navigator.webkitGetUserMedia) {
   rtc_peer_connection = webkitRTCPeerConnection;
   rtc_session_description = RTCSessionDescription;
   get_user_media = navigator.webkitGetUserMedia.bind(navigator);
@@ -79,7 +79,7 @@ function start() {
   setup_video();
 
   // setup generic connection to the signaling server using the WebSocket API
-  signaling_server = new WebSocket("ws://10.0.2.226:1234");
+  signaling_server = new WebSocket("ws://localhost:"+process.env.PORT);
 
   if (document.location.hash === "" || document.location.hash === undefined) { // you are the Caller
 
