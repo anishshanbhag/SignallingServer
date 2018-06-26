@@ -79,8 +79,7 @@ function start() {
   setup_video();
 
   // setup generic connection to the signaling server using the WebSocket API
-  var ws_url="ws://localhost:1234"
-  signaling_server = new WebSocket("ws://localhost:443");
+  signaling_server = new WebSocket("ws://localhost:1234");
 
   if (document.location.hash === "" || document.location.hash === undefined) { // you are the Caller
 
